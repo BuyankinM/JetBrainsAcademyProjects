@@ -1,0 +1,28 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    # modify this function
+    def binary_search(elements, target):
+        left, right = 0, len(elements) - 1
+
+        while left <= right:
+            middle = (left + right) // 2
+
+            if elements[middle] == target:
+                return middle
+            if target < elements[middle]:
+                right = middle - 1
+            else:
+                left = middle + 1
+
+        return -1
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/9326
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/9326">JetBrains
+    Academy</a></html>
+  time: Tue, 18 Aug 2020 21:05:35 UTC
+record: -1

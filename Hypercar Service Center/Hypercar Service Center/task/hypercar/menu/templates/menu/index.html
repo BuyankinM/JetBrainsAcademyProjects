@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    {% for link, name in menu_urls.items %}
+        <p><a target="_blank" href="{{link}}">{{name}}</a></p>
+    {% endfor %}
+</body>
+</html>

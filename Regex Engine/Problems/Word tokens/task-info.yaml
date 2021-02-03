@@ -1,0 +1,16 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10368
+status: Solved
+feedback:
+  message: |-
+    <html>[+] Test #1. OK
+    [+] Test #2. OK
+    [+] Test #3. OK
+
+    3 of 3 test(s) passed.<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/10368">JetBrains Academy</a></html>
+  time: Thu, 03 Sep 2020 09:53:58 UTC
+record: -1

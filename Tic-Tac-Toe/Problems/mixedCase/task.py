@@ -1,0 +1,1 @@
+print("".join([word.lower() if not i else word.capitalize() for i, word in enumerate(input().split())]))

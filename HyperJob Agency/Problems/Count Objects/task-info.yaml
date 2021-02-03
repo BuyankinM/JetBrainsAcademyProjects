@@ -1,0 +1,20 @@
+type: code
+files:
+- name: task.py
+  visible: true
+  text: |-
+    template = """
+    <html>
+      <div>
+        The assortment is {{ }} drinks
+      </div>
+    </html>
+    """
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7646
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/7646">JetBrains
+    Academy</a></html>
+  time: Thu, 20 Aug 2020 21:05:44 UTC
+record: -1

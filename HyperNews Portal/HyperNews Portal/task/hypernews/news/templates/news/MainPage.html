@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyper news</title>
+
+    {% load static %}
+    <link rel="stylesheet" target="_blank" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <form method="get">
+        {% csrf_token %}
+        <label>Search <input name="q" size="50"></label>
+        <button type="submit">Search</button><br>
+    </form>
+
+    {% if news_dict_by_date|length > 0 %}
+    <h2>Hyper news</h2>
+    {% endif %}
+
+    {% for news_date, news_list in news_dict_by_date.items %}
+    <h4>{{news_date}}</h4>
+    <ul>
+        {% for news_info in news_list %}
+        <li><a href="/news/{{news_info.link}}/">{{news_info.title}}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <a target="_blank" href="/news/create/">Create news</a>
+</body>
+</html>

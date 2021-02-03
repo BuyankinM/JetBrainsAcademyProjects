@@ -1,0 +1,36 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    from abc import ABC, abstractmethod
+
+
+    class Player(ABC):
+        def __init__(self, name, rank, level):
+            self.name = name
+            self.rank = rank
+            self.level = level
+            super().__init__()
+
+        @abstractmethod
+        def fight(self):
+            ...
+
+        @abstractmethod
+        def do_spell(self):
+            ...
+
+        def sing_song(self):
+            print("No songs for me!")
+
+
+    # create a Wizard
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10118
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/10118">JetBrains
+    Academy</a></html>
+  time: Fri, 28 Aug 2020 15:51:29 UTC
+record: -1

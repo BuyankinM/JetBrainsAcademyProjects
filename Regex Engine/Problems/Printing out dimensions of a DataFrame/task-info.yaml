@@ -1,0 +1,18 @@
+type: code
+files:
+- name: main.py
+  visible: true
+  text: |-
+    import pandas as pd
+
+
+    def print_dim(df):
+        pass
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/10941
+status: Solved
+feedback:
+  message: <html>Correct solution<br/><br/>Continue on <a href="https://hyperskill.org/learn/step/10941">JetBrains
+    Academy</a></html>
+  time: Tue, 06 Oct 2020 13:26:48 UTC
+record: -1

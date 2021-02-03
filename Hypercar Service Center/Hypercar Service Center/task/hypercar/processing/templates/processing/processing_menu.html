@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Processing</title>
+</head>
+<body>
+
+<div>Change oil queue: {{change_oil}}</div>
+<div>Inflate tires queue: {{inflate_tires}}</div>
+<div>Get diagnostic queue: {{diagnostic}}</div>
+
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Process next</button>
+</form>
+
+</body>
+</html>
